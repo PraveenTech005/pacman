@@ -1,0 +1,37 @@
+<svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Over Open Mouth -->
+    <symbol id="over">
+      <g transform="scale(0.213)">
+        <path d="M150,0C43.941585,3.99809,-0.574397,89.519123,0,150c-.294272,86.422729,78.539076,156.068211,150,150c31.047517,1.873534,72.729861-15.474052,90.172455-29.778451L149.999999,150L240.616396,29.972365C223.116005,14.339327,178.897322,-1.936115,149.999998,0" fill="#f0c419" stroke="#000" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <!-- Fully Open Mouth -->
+    <symbol id="open">
+      <g transform="scale(0.213)">
+        <path d="M150,0C61.775764,-1.756387,-3.380865,79.911703,0,150C2.338369,253.864932,88.138082,300.93464,150,300c49.746236,2.07786,100.220951-23.6309,129.959385-74.979804L150,150L279.774768,75.008335C248.575229,24.659835,197.580932,-1.468185,150,0Z" fill="#f0c419" stroke="#000" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <!-- Half Open Mouth -->
+    <symbol id="half">
+      <g transform="scale(0.213)">
+        <path d="M150,0C61.775764,-1.756387,-3.380865,79.911703,0,150C2.338369,253.864932,88.138082,300.93464,150,300c68.37462,3.741263,130.178174-52.620899,141.715706-99.915803L150,150l141.568103-49.95985C273.971923,40.271841,201.153057,-5.143128,150,0Z" fill="#f0c419" stroke="#000" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <!-- Closed Mouth -->
+    <symbol id="closed">
+      <g transform="scale(0.213)">
+        <ellipse rx="150" ry="150" transform="translate(150 150)" fill="#f0c419" stroke="#000" stroke-width="2"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Animate Between Frames -->
+  <use href="#open">
+    <animate attributeName="href" dur="1s" repeatCount="indefinite"
+      values="#over;#open;#half;#closed;#half;#open;" />
+  </use>
+</svg>

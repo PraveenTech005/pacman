@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+@import "tailwindcss";
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0e1118;
+  color: #ccc;
+  font-size: 14px;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+.subtle-noise {
+  background-color: #0e1118;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0
+  );
+  background-size: 15px 15px;
+}
+
+.dynapuff {
+  font-family: "DynaPuff";
+}
+
+.mont {
+  font-family: "Montserrat";
+}
+
+.quicksand {
+  font-family: "Quicksand";
+}
+
+h1 {
+  font-family: "DynaPuff";
+  font-weight: 500;
+  color: white;
+}
+
+.card {
+  background-color: #fff1;
+  padding: 40px;
+  border-radius: 8px;
+  border: 2px solid #fff2;
+  backdrop-filter: blur(2px);
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.custom::-webkit-scrollbar-thumb {
+  background-color: #0e1118;
+}
+
+.submit {
+  color: #59ac77;
+  font-family: Montserrat;
+  border: 2px solid #59ac77;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: bolder;
+  margin: auto;
+  display: flex;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #59cc77;
+  border: 2px solid #59cc77;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  border-radius: 1pc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0e1118;
+}
