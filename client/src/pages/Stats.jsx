@@ -138,8 +138,8 @@ const Stats = () => {
           </button>
         </form>
       ) : (
-        <div className="flex flex-row w-full h-screen">
-          <div className="w-2/10 flex flex-col justify-between items-center py-10">
+        <div className="flex flex-col lg:flex-row w-full min-h-screen items-center">
+          <div className="w-10/12 lg:w-2/10 flex flex-col justify-between items-center py-10 space-y-10 lg:space-y-10">
             <div className="card w-10/12 space-y-2 !px-5">
               <div className="flex flex-row justify-between items-center">
                 <h3>Game Name</h3>
@@ -184,16 +184,19 @@ const Stats = () => {
             </div>
           </div>
           {players.length ? (
-            <div className="w-10/12 p-10 grid grid-cols-4 gap-5 overflow-y-auto h-screen">
+            <div className="w-10/12 p-10 grid grid-cols-1 lg:grid-cols-4 gap-5 overflow-y-auto h-screen">
               {leaderboard.map((item, index) => (
-                <div key={index} className="card !px-10 !py-5 space-y-3 flex  flex-col justify-center">
+                <div
+                  key={index}
+                  className="card !px-10 !py-5 space-y-3 flex  flex-col justify-center"
+                >
                   <div className="flex flex-row w-full justify-between items-center">
                     <h3>Name</h3>
-                    <p>{item.name}</p>
+                    <p className="text-right">{item.name}</p>
                   </div>
                   <div className="flex flex-row w-full justify-between items-center">
                     <h3>Identity</h3>
-                    <p>{item.identity}</p>
+                    <p className="text-right">{item.identity}</p>
                   </div>
                   <div className="flex flex-row w-full justify-between items-center">
                     <h3>Completed Waves</h3>
