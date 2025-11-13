@@ -34,7 +34,7 @@ const Join = () => {
 
   return (
     <>
-      <div className="w-full h-screen flex llg:hidden flex-row justify-center items-center py-8 mont text-lg">
+      <div className="w-full h-screen flex lg:hidden flex-row justify-center items-center py-8 mont text-lg">
         <h2>Sorry , you have to get back with a PC here.</h2>
       </div>
       <div className="w-full h-screen hidden lg:flex flex-row justify-center items-center py-8">
